@@ -3,3 +3,13 @@
 @tailwind components;
 
 @tailwind utilities;
+
+/* create a custom utility class */
+@layer components {
+  .buttonStyle {
+    @apply px-6 py-3 text-4xl text-white bg-green-400 rounded-full cursor-pointer hover:bg-green-500 focus:outline-none;
+  }
+  .inputStyle {
+    @apply block w-full py-3 pl-3 mt-1 text-xl bg-white border rounded-md shadow-sm border-slate-200 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-green-500;
+  }
+}
